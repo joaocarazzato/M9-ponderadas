@@ -1,6 +1,6 @@
 
 # Vulnerabilidades em dispositivos MQTT segundo a CIA Triad
-O objetivo deste repositório é analisar as potenciais vulnerabilidades de segurança associadas a dispositivos MQTT utilizando os princípios da Triade CIA. Levando em consideração os pilares de confidencialidade, integridade e disponibilidade.
+O objetivo deste repositório é analisar as potenciais vulnerabilidades de segurança associadas a dispositivos MQTT utilizando os princípios da CIA Triad. Levando em consideração os pilares de confidencialidade, integridade e disponibilidade.
 
 ## Confiabilidade
 A falta de uma configuração adequada de autenticação e autorização de clientes MQTT pode resultar em acessos não autorizados no sistema, o que poderia permitir a publicação ou acesso a informações sensíveis.

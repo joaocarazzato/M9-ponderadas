@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase
+    hostname: metabase
+    volumes: 
+    - /metabase-data:/metabase.db
+    # - type: bind
+    #   source: ./sqlite-db
+    #   target: /app/sqlite-db
+    ports:
+      - 3001:3000
+    healthcheck:
+      test: curl --fail -I http://localhost:3000/api/health || exit 1
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    networks:
+      - metanet1
+networks:
+  metanet1:
+    driver: bridge
